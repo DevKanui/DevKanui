@@ -1,4 +1,4 @@
-<img align="left" width="480" alt="metrics" src="/github-metrics.svg">
+<img align="left" width="480" alt="metrics" src="/github/workflows/main.yml">
 <img align="right" alt="count" src="https://count.getloli.com/get/@:alensaito1?theme=rule34">
 
 
