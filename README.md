@@ -1,13 +1,7 @@
-- 👋 Hi, I’m @DevKanui
-- 👀 I’m interested in Coding and Gaming
-- 🌱 I’m currently a chasier
-- 📫 How to reach me? You can reach me via Email (kanuidev@gmail.com) or on phone (818045033448) only whatsapp
+<img align="left" width="480" alt="metrics" src="/github-metrics.svg">
+<img align="right" alt="count" src="https://count.getloli.com/get/@:alensaito1?theme=rule34">
 
-<b>⚡ My Dev Statistics</b>
-<!-- GitHub Stats -->  
-<p>  
-<!-- GitHub Stats -->  
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=DevKanui&include_all_commits=true&show_icons=true&hide_border=true&count_private=true&theme=react" />
-<!-- Most Used Languages -->  
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DevKanui&include_all_commits=true&count_private=true&show_icons=true&hide_border=true&layout=compact&hide=lua&langs_count=8&theme=react"/>  
-</p> 
+
+<img src="https://discord-readme-badge.vercel.app/api?id=577808661485977620" alt="Discord" align="right" width=320/>
+
+<img src="https://spotify-github-profile.vercel.app/api/view?uid=31tvn6y7tjpbzwvacw3iitologtq&cover_image=true&theme=default&bar_color=00ff00&bar_color_cover=true" alt="spotify" align="right"/>
