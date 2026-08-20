@@ -1,0 +1,43 @@
+# .github/workflows/snake.yml
+#
+# Generiert den Snake-Contribution-Graph und pusht ihn in den Branch "output".
+# Braucht kein zusaetzliches Secret, GITHUB_TOKEN reicht.
+#
+# Der Branch "output" wird beim ersten Lauf automatisch angelegt. Danach liegen
+# die Dateien unter:
+#   https://raw.githubusercontent.com/DevKanui/DevKanui/output/snake.svg
+#   https://raw.githubusercontent.com/DevKanui/DevKanui/output/snake-light.svg
+
+name: Snake
+
+on:
+  schedule: [{cron: "0 5 * * *"}]
+  workflow_dispatch:
+  push: {branches: ["main"]}
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+
+      - name: Generate
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Eine Datei pro Zeile. Optionen als Query-String.
+          # palette: github, github-dark, github-light
+          # oder eigene Farben ueber color_snake / color_dots
+          outputs: |
+            dist/snake.svg?palette=github-dark
+            dist/snake-light.svg?palette=github-light
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
